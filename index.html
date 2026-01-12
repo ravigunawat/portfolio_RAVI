@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ravi Meena — Portfolio</title>
+  <meta name="description" content="Portfolio of Ravi Meena — Full-Stack Developer Intern (B.Tech CSE, IIIT Manipur)" />
+  <style>
+    :root{
+      --bg1:#ff9a9e; --bg2:#fad0c4;
+      --card:#ffffffee;
+      --text:#222;
+      --muted:#555;
+      --accent:#ff5f6d;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif;
+      background:linear-gradient(135deg,var(--bg1),var(--bg2));
+      color:var(--text);
+    }
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{
+      width:72px;height:72px;border-radius:50%;
+      background:linear-gradient(135deg,#ff5f6d,#ffc371);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;color:white;
+      box-shadow:0 6px 18px rgba(0,0,0,0.25)
+    }
+    h1{font-size:1.7rem;margin:0}
+    .sub{color:var(--muted);font-size:0.95rem}
+    nav a{color:var(--text);text-decoration:none;margin-left:18px;font-weight:600}
+
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:22px}
+    .card{
+      background:var(--card);
+      padding:20px;
+      border-radius:16px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.2);
+      border:2px solid rgba(255,255,255,0.7);
+    }
+    .hero{display:flex;flex-direction:column;gap:8px}
+
+    .goal{
+      background:linear-gradient(135deg,#f6d365,#fda085);
+      padding:14px;border-radius:10px;
+      color:#222;font-weight:600;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15)
+    }
+
+    .section-title h2{margin:0;font-size:1.2rem;color:#000}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{
+      background:linear-gradient(135deg,#a1c4fd,#c2e9fb);
+      padding:8px 12px;border-radius:20px;
+      font-size:0.9rem;
+      font-weight:600;
+      color:#222;
+      box-shadow:0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    .projects .project{
+      padding:14px;
+      background:linear-gradient(135deg,#ffecd2,#fcb69f);
+      border-radius:14px;
+      margin-bottom:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    }
+    .projects .project a{color:#d7263d;font-weight:700;text-decoration:none}
+
+    footer{margin-top:22px;color:#333;font-size:0.9rem;display:flex;justify-content:space-between}
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .avatar{width:56px;height:56px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">RM</div>
+        <div>
+          <h1>Ravi Meena</h1>
+          <div class="sub">B.Tech CSE (2023–2027) • IIIT Manipur — Full‑Stack Dev Intern</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card hero">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+            <div>
+              <h2>Seeking a Full‑Stack Development Internship</h2>
+              <p class="sub">I build responsive web apps with an emphasis on clean UI, performance and deployability. Interested in frontend & backend development, data structures and practical web systems.</p>
+            </div>
+            <div style="text-align:right;color:var(--muted);font-size:0.95rem">
+              <div>Jaipur, India</div>
+              <div style="margin-top:6px">ravigunawat916@gmail.com • +91 91661 26682</div>
+            </div>
+          </div>
+
+          <div class="goal">Career objective — Apply technical expertise in designing, developing, and optimizing scalable web solutions as a Full‑Stack Development Intern.</div>
+        </section>
+
+        <section id="projects" class="card projects" style="margin-top:18px">
+          <div class="section-title"><h2>Selected Projects</h2><div class="sub">showcase of web + systems work</div></div>
+
+          <div class="project">
+            <strong>Treading Web (Bluestock)</strong> <span class="sub">May 2025 – Jun 2025</span>
+            <p class="sub">A frontend portfolio/demo project demonstrating UI/UX, responsive techniques and GitHub Pages deployment.</p>
+            <div><a href="https://ravigunawat.github.io/Bluastock/index.html" target="_blank">Live demo • GitHub Pages</a></div>
+            <div style="margin-top:8px" class="chips">
+              <div class="chip">HTML</div><div class="chip">CSS</div><div class="chip">JavaScript</div>
+            </div>
+          </div>
+
+          <div class="project">
+            <strong>Health Administration System</strong> <span class="sub">Jan 2023</span>
+            <p class="sub">System to streamline patient record management and appointment scheduling.</p>
+            <div class="chips" style="margin-top:8px"><div class="chip">Backend</div><div class="chip">Database</div></div>
+          </div>
+
+          <div class="project">
+            <strong>Weather Tracking System</strong> <span class="sub">Jan 2023</span>
+            <p class="sub">Real-time weather tracking to provide up-to-date conditions and forecasting.</p>
+            <div class="chips" style="margin-top:8px"><div class="chip">APIs</div><div class="chip">Realtime</div></div>
+          </div>
+        </section>
+
+        <section id="experience" class="card" style="margin-top:18px">
+          <div class="section-title"><h2>Experience</h2><div class="sub">professional & internship</div></div>
+          <div>
+            <strong>Software Development Engineering (Web) — Internship</strong>
+            <div class="sub">Bluestock (Virtual) — May 2025 – Jun 2025</div>
+            <p class="sub">Worked on frontend features for the Treading Web project; improved responsive design, accessibility and deployment workflows using Git & GitHub.</p>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <div class="section-title"><h2>Education</h2><div class="sub">academic background</div></div>
+          <div>
+            <strong>B.Tech, Computer Science & Engineering</strong>
+            <div class="sub">Indian Institute of Information Technology, Manipur — 2023 – 2027</div>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="section-title"><h2>Skills</h2><div class="sub">core technologies</div></div>
+          <div class="chips" style="margin-top:8px">
+            <div class="chip">JavaScript</div>
+            <div class="chip">Node.js</div>
+            <div class="chip">HTML</div>
+            <div class="chip">CSS</div>
+            <div class="chip">Java</div>
+            <div class="chip">C++</div>
+            <div class="chip">Python</div>
+            <div class="chip">SQL</div>
+            <div class="chip">Git</div>
+            <div class="chip">Data Structures</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title"><h2>Extras</h2><div class="sub">activities & achievements</div></div>
+          <ul>
+            <li>Member of Tech Club</li>
+            <li>Member of Coding Community</li>
+            <li>Solved 500+ problems on coding platforms (LeetCode, CodeChef, GfG)</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title"><h2>Contact</h2><div class="sub">reach out</div></div>
+          <div class="sub">Email: <a href="mailto:ravigunawat916@gmail.com">ravigunawat916@gmail.com</a></div>
+          <div class="sub" style="margin-top:6px">Phone: <a href="tel:+919166126682">+91 91661 26682</a></div>
+          <div style="margin-top:10px"><a href="https://ravigunawat.github.io/Bluastock/index.html" target="_blank">GitHub Pages: Bluastock</a></div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>Built by Ravi Meena • B.Tech CSE, IIIT Manipur</div>
+      <div class="sub">Want changes? Reply with edits and I’ll update the page.</div>
+    </footer>
+
+  </div>
+</body>
+</html>
